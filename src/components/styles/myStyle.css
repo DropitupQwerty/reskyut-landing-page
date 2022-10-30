@@ -1,0 +1,95 @@
+:root {
+  --main-color: #e94057;
+  --primary-text-color: #fff;
+  --pane-padding: 5px 42px;
+  --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  width: 100vw;
+  font-size: 18px;
+  align-items: center;
+  color: var(--primary-text-color);
+  position: fixed;
+  top: 0;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  font-family: monospace;
+}
+
+.nav-header {
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.description {
+  font-weight: 100;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.description-header {
+  font-size: 30px;
+}
+.description-container {
+  width: 100%;
+}
+
+.banner {
+  /* background-color: var(--main-color); */
+  background-image: url('../../assets/reskyut-banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100vw 70vh;
+}
+
+.hero-desc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-content {
+  width: 50%;
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content-button {
+  margin-top: 50px;
+  height: 50px;
+}
+
+.hero-prev-img {
+  margin-top: 25vh;
+  height: 600px;
+}
+
+.page-content-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
