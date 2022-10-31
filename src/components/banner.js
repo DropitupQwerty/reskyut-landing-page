@@ -1,7 +1,7 @@
-import { Button } from '@mui/material';
 import React from 'react';
 import preview from '../assets/reskyut-sample-phone.png';
-import './styles/myStyle.css';
+import AndroidIcon from '@mui/icons-material/Android';
+import QrCode2Icon from '@mui/icons-material/QrCode2';
 
 export default function Banner() {
   return (
@@ -14,30 +14,30 @@ export default function Banner() {
                 Reskyut Made Fun and Easy Adoption!
               </h1>
               <h2 className="description">
-                Download na ang application like so fucking good! so bitches
-                download good shit right now. This Application made for easy
-                adoption and helps overpopulated animal shlter in the
-                philippines
+                Download our app to search for rescued animals in animal
+                shelters throughout the Philippines, and to help the rescue
+                shelter in finding a suitable owner for their rescued animal
+                while also making room for other stray animals.
               </h2>
             </div>
-            <div className="hero-content-button">
-              <Button
-                sx={{
-                  margin: '0 5px',
-                  background: '#ADFF00',
-                  color: '#333',
-                  padding: '10px',
-                  borderRadius: '20px',
-                  width: '200px',
-                  height: '60px',
-                  fontSize: '15px',
-                  border: '1px solid #333',
-                  fontWeight: 'bold',
-                }}
-              >
-                Download now
-              </Button>
-            </div>
+            <section className="hero-content-button">
+              <div>
+                <button className="button-primary">
+                  <div className="icon-button">
+                    <AndroidIcon />
+                  </div>
+                  <div>Download now</div>
+                </button>
+              </div>
+              <div>
+                <button className="button-secondary">
+                  <div className="icon-button">
+                    <QrCode2Icon />
+                  </div>
+                  <div>Scan Qr code</div>
+                </button>
+              </div>
+            </section>
           </div>
 
           <div className="hero-prev-container">

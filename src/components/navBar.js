@@ -1,9 +1,16 @@
 import React from 'react';
-import './styles/myStyle.css';
+
 import logo from '../assets/reskyut-logo.png';
-import { Link } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
+  const style = {
+    listItem: {
+      textDecoration: 'none',
+      color: '#fff',
+    },
+  };
+
   return (
     <div>
       <nav className="nav-container">
@@ -17,10 +24,18 @@ export default function NavBar() {
         </div>
         <div>
           <ul className="nav-links">
-            <li className="nav-link">Home</li>
-            <li className="nav-link">Download</li>
-            <li className="nav-link">About</li>
-            <li className="nav-link">Contact us</li>
+            <li className="nav-link">
+              <Link>Home</Link>
+            </li>
+            <li className="nav-link">
+              <Link>Download</Link>
+            </li>
+            <li className="nav-link">
+              <Link>About</Link>
+            </li>
+            <li className="nav-link">
+              <Link>Contact us</Link>
+            </li>
           </ul>
         </div>
       </nav>

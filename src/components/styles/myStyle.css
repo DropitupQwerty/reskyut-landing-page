@@ -1,5 +1,6 @@
 :root {
   --main-color: #e94057;
+  --secondary-color: #23272b;
   --primary-text-color: #fff;
   --pane-padding: 5px 42px;
   --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -24,11 +25,19 @@
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin-right: 20px;
 }
 
-.nav-link {
+.nav-link a {
   padding: 0 20px;
   font-family: monospace;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.nav-link a:hover {
+  color: var(--secondary-color);
 }
 
 .nav-header {
@@ -43,6 +52,7 @@
 }
 
 .description {
+  width: 100%;
   font-weight: 100;
   font-size: 20px;
   text-align: justify;
@@ -70,26 +80,106 @@
 }
 
 .hero-content {
-  width: 50%;
+  margin-top: 80px;
+  width: 60%;
   color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .hero-content {
+    width: 90%;
+  }
 }
 
 .hero-content-button {
   margin-top: 50px;
   height: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-prev-img {
-  margin-top: 25vh;
+  margin-top: 18vh;
   height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-content-button {
+    justify-content: center;
+  }
+  .hero-prev-img {
+    margin-top: 150px;
+    height: 400px;
+  }
+}
+
+.hero-content,
+.hero-prev-container {
+  padding: 0 20px;
 }
 
 .page-content-container {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+
+.button-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+  border: 0.2px solid var(--primary-text-color);
+}
+
+.button-secondary {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-color);
+  border: 0.2px solid var(--secondary-color);
+}
+
+.button-primary,
+.button-secondary {
+  font-weight: bold;
+  padding: 18px 20px;
+  border-radius: 20px;
+  margin: 0 20px;
+  margin-top: 20px;
+  font-size: 1.7rem;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-content-button {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+.button-primary:hover {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-color);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+
+.icon-button {
+  margin-right: 10px;
+}
+
+.footer-header {
+  font-size: 5.5rem;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-header {
+    font-size: 3rem;
+  }
 }

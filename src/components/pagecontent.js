@@ -1,4 +1,3 @@
-import { Card, CardContent, CardMedia, Grid, Paper } from '@mui/material';
 import React from 'react';
 
 export default function PageContent() {
@@ -12,14 +11,7 @@ export default function PageContent() {
   return (
     <div className="page-content-container">
       <div>
-        <Grid container spacing={4}>
-          <Grid item xs={6}>
-            <Card sx={styles.card}></Card>
-          </Grid>
-          <Grid item xs={6}>
-            <Card sx={styles.card}></Card>
-          </Grid>
-        </Grid>
+        <h1 className="footer-header">Don't Shop. Adopt!</h1>
       </div>
     </div>
   );
