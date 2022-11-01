@@ -8,16 +8,76 @@
   --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.button-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+  border: 0.2px solid var(--primary-text-color);
+}
+
+.button-secondary {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-color);
+  border: 0.2px solid var(--secondary-color);
+  width: 200px;
+}
+
+.button-primary,
+.button-secondary,
+.button-link {
+  font-weight: bold;
+  padding: 18px 20px;
+  border-radius: 20px;
+  margin: 0 20px;
+  margin-top: 20px;
+  font-size: 1.7rem;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.button-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  width: 160px;
+  background-color: var(--primary-text-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.button-link:hover {
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-text);
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-content-button {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+.button-primary:hover {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-color);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+
+.icon-button {
+  margin-right: 10px;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   background-color: var(--main-color);
-  width: 100vw;
   font-size: 18px;
   align-items: center;
   color: var(--primary-text-color);
-  position: fixed;
-  top: 0;
 }
 
 .nav-links {
@@ -43,7 +103,7 @@
 .nav-header {
   font-weight: bolder;
   font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .nav-logo {
@@ -63,10 +123,10 @@
 }
 .description-container {
   width: 100%;
+  margin-top: 15%;
 }
 
 .banner {
-  /* background-color: var(--main-color); */
   background-image: url('../../assets/reskyut-banner-bg.png');
   background-repeat: no-repeat;
   background-size: 100vw 70vh;
@@ -75,17 +135,14 @@
 .hero-desc {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
 }
 
 .hero-content {
-  margin-top: 80px;
   width: 60%;
   color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 @media only screen and (max-width: 600px) {
   .hero-content {
@@ -94,14 +151,14 @@
 }
 
 .hero-content-button {
-  margin-top: 50px;
   height: 50px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .hero-prev-img {
-  margin-top: 18vh;
+  margin-top: 13vh;
   height: 600px;
 }
 
@@ -111,7 +168,7 @@
   }
   .hero-prev-img {
     margin-top: 150px;
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -124,62 +181,168 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
-}
-
-.button-primary {
-  background-color: var(--secondary-color);
-  color: var(--primary-text-color);
-  border: 0.2px solid var(--primary-text-color);
-}
-
-.button-secondary {
-  background-color: var(--primary-text-color);
-  color: var(--secondary-color);
-  border: 0.2px solid var(--secondary-color);
-}
-
-.button-primary,
-.button-secondary {
-  font-weight: bold;
-  padding: 18px 20px;
-  border-radius: 20px;
-  margin: 0 20px;
-  margin-top: 20px;
-  font-size: 1.7rem;
-  width: 200px;
-  display: flex;
   align-items: center;
-  transition: 0.3s;
+  flex-direction: column;
 }
 
-@media only screen and (max-width: 600px) {
-  .hero-content-button {
-    margin-top: 0;
-    justify-content: center;
-  }
-}
-
-.button-primary:hover {
-  background-color: var(--primary-text-color);
-  color: var(--secondary-color);
-}
-
-.button-secondary:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-text-color);
-}
-
-.icon-button {
-  margin-right: 10px;
-}
-
-.footer-header {
-  font-size: 5.5rem;
+.content-header {
+  font-size: 5rem;
   transition: 0.4s;
 }
 
 @media only screen and (max-width: 600px) {
-  .footer-header {
+  .content-header {
     font-size: 3rem;
+  }
+}
+
+.content {
+  width: 100%;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+}
+
+.page-content {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  transition: 0.2s;
+  /* flex-wrap: wrap-reverse; */
+}
+
+.page-content:hover {
+  color: var(--main-color);
+}
+
+.cards {
+  text-align: center;
+  transition: 0.2s;
+}
+
+.cards-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards-icon {
+  height: 50px;
+}
+
+.cards-title {
+  font-weight: bolder;
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cards-icon {
+    height: 50px;
+  }
+}
+
+.paddingLeftRight {
+  padding: 0 20px;
+  margin: 50px;
+}
+
+.footer-container {
+  margin-top: 200px;
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.qr {
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.qr:hover {
+  transform: scale(1.07);
+}
+
+.qr img {
+  height: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-text-color);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.qr h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.footer-contacts-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts-info,
+.qr {
+  margin-top: 30px;
+}
+
+.contact-container {
+  width: 100%;
+  color: var(--primary-text-color);
+}
+
+.contact-header {
+  margin: 0;
+  font-size: 25px;
+}
+
+.about {
+  margin: 0;
+  width: 80%;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.contact-lists {
+  list-style: none;
+}
+
+.about-container {
+  width: 100%;
+  color: var(--primary-text-color);
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .qr {
+    bottom: 10vh;
+    display: flex;
+  }
+
+  .footer-contacts-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-container {
+    width: 100%;
+    margin: 0 20px 0 20px;
   }
 }

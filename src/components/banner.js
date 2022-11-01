@@ -2,8 +2,11 @@ import React from 'react';
 import preview from '../assets/reskyut-sample-phone.png';
 import AndroidIcon from '@mui/icons-material/Android';
 import QrCode2Icon from '@mui/icons-material/QrCode2';
+import { useNavigate } from 'react-router-dom';
 
 export default function Banner() {
+  const navigate = useNavigate();
+
   return (
     <div className="hero-container">
       <div className="banner">
@@ -11,7 +14,7 @@ export default function Banner() {
           <div className="hero-content">
             <div className="description-container">
               <h1 className="description-header">
-                Reskyut Made Fun and Easy Adoption!
+                Reskyut Made Fun and Easy Adoption
               </h1>
               <h2 className="description">
                 Download our app to search for rescued animals in animal
@@ -21,8 +24,16 @@ export default function Banner() {
               </h2>
             </div>
             <section className="hero-content-button">
-              <div>
-                <button className="button-primary">
+              <div id="download">
+                <button
+                  className="button-primary"
+                  onClick={() =>
+                    window.open(
+                      'https://turtle-v2-artifacts.s3.amazonaws.com/android/e4a81826-7487-43d6-bd2b-972a7e90e334-83e31df809c34ddcb0890ec679ab160f/application-archive.apk',
+                      '_blank'
+                    )
+                  }
+                >
                   <div className="icon-button">
                     <AndroidIcon />
                   </div>
@@ -30,12 +41,12 @@ export default function Banner() {
                 </button>
               </div>
               <div>
-                <button className="button-secondary">
+                <a className="button-link" href="#qr-code">
                   <div className="icon-button">
                     <QrCode2Icon />
                   </div>
                   <div>Scan Qr code</div>
-                </button>
+                </a>
               </div>
             </section>
           </div>

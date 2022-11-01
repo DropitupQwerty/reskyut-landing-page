@@ -28,11 +28,9 @@ export default function NavBar() {
               <Link>Home</Link>
             </li>
             <li className="nav-link">
-              <Link>Download</Link>
+              <a href="#download">Download</a>
             </li>
-            <li className="nav-link">
-              <Link>About</Link>
-            </li>
+
             <li className="nav-link">
               <Link>Contact us</Link>
             </li>
