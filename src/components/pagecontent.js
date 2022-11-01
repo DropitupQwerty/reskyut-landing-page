@@ -9,11 +9,14 @@ export default function PageContent() {
   return (
     <div className="page-content-container">
       <div className="page-content">
-        <h1 className="content-header">Don't Shop. Adopt!</h1>
-        <h2 className="content">
-          Resyut application is an online platform wherein it will help on
-          finding the best owner that will really care that can provide
-          assurance for the welfare of the stray animals
+        <h1 className="content-header">Reskyut</h1>
+        <h2 className="description">
+          "Reskyut". The name is derived from the combination of the words
+          "rescue" and "cute" (Kyut) in Filipino, A single platform that would
+          support animal shelters and pet lovers in the adoption process in a
+          fun and easy way via a mobile application. Developing the Reskyut
+          application makes it easy to find pets that are available for adoption
+          in various rescue shelters.
         </h2>
       </div>
       <div className="cards-container">

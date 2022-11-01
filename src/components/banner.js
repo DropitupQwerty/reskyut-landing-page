@@ -3,6 +3,7 @@ import preview from '../assets/reskyut-sample-phone.png';
 import AndroidIcon from '@mui/icons-material/Android';
 import QrCode2Icon from '@mui/icons-material/QrCode2';
 import { useNavigate } from 'react-router-dom';
+import pawsbg from '../assets/reskyut-paws-bg.png';
 
 export default function Banner() {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ export default function Banner() {
   return (
     <div className="hero-container">
       <div className="banner">
+        <img className="paws-bg" src={pawsbg} alt="paws-bg" />
         <div className="hero-desc">
           <div className="hero-content">
             <div className="description-container">
