@@ -12,16 +12,6 @@ export default function PageFooter() {
           <h2>DOWNLOAD THE APP!</h2>
         </div>
         <div className="footer-contacts-info">
-          <div className="about-container ">
-            <div>
-              <h2 className="contact-header">About Us</h2>
-            </div>
-            <h2 className="about">
-              Resyut application is an online platform wherein it will help on
-              finding the best owner that will really care that can provide
-              assurance for the welfare of the stray animals
-            </h2>
-          </div>
           <div className="contact-container">
             <div>
               <h2 className="contact-header">Contact Us</h2>
@@ -29,13 +19,16 @@ export default function PageFooter() {
 
             <ul className="contact-lists">
               <li>
-                <h2 className="about">Facebook</h2>
+                <input />
               </li>
               <li>
-                <h2 className="about">Instagram</h2>
+                <input />
               </li>
               <li>
-                <h2 className="about">Email </h2>
+                <input />
+              </li>
+              <li>
+                <input />
               </li>
             </ul>
           </div>
