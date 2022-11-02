@@ -52,10 +52,10 @@ export default function PrivacyPolicy() {
           <ul>
             <li>
               <h2>
-                Social Media You provide us with information through your social
-                media account, such as when you log in to your Reskyut account
-                using your social media or other account (e.g., Facebook and
-                Google)
+                <b>Social Media</b> You provide us with information through your
+                social media account, such as when you log in to your Reskyut
+                account using your social media or other account (e.g., Facebook
+                and Google)
               </h2>
             </li>
           </ul>

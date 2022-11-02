@@ -19,12 +19,6 @@ export default function Banner() {
                 <h1>Adopt,</h1>
                 <h1>Don't Shop</h1>
               </div>
-              {/* <h2 className="description">
-                Download our app to search for rescued animals in animal
-                shelters throughout the Philippines, and to help the rescue
-                shelter in finding a suitable owner for their rescued animal
-                while also making room for other stray animals.
-              </h2> */}
             </div>
             <section className="hero-content-button">
               <div id="download">

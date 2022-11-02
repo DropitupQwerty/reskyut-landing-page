@@ -141,11 +141,9 @@ a {
   text-align: justify;
 }
 
-.description-header {
-  font-size: 45px;
-}
 .description-header h1 {
   margin: 0;
+  font-size: 100px;
   font-weight: 300;
 }
 
@@ -159,10 +157,12 @@ a {
     font-size: 20px;
   }
   .description-header {
-    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .description-header h1 {
+    font-size: 70px;
   }
 }
 
@@ -538,4 +538,10 @@ h3 {
   text-decoration: underline;
   margin-left: 5px;
   z-index: 999;
+}
+
+@media only screen and (max-width: 600px) {
+  .rules-container {
+    margin: 20px;
+  }
 }
