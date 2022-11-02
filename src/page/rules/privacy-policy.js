@@ -128,6 +128,78 @@ export default function PrivacyPolicy() {
             adopter, Continue reading for a more thorough explanation about how
             your information is shared with others.
           </h2>
+
+          <h2 className="bold">With NGO rescue Shelter</h2>
+          <ul>
+            <li>
+              <h2>
+                You share information with the NGO rescue shelter when you
+                voluntarily disclose information on the service (including
+                logging in with your Google or Facebook account). We get your
+                profile picture , name, and also the additional information form
+                you submit before you submit the adoption form when adopting a
+                pet. Please be careful with your information and make sure that
+                the content you share is true because the NGO rescue shelter
+                will also validate it. Most of them need a 1 on 1 interview to
+                be able to find deserving adopters for their pets.
+              </h2>
+            </li>
+          </ul>
+          <h2 className="bold">NGO rescue Shelter to Adopter</h2>
+          <ul>
+            <li>
+              <h2>
+                The NGO rescue shelter also shares their information for the
+                adopter to know the details of the rescue shelter, such as
+                address to know where it will be located, contact info, and the
+                details of the pet. They post the details of the pet in reskyut
+                for the adopter to see different pets and details about them..
+              </h2>
+            </li>
+          </ul>
+
+          <h2 className="bold">4. Your Rights</h2>
+          <h2>
+            We want to remind you of the following choices and resources you
+            have because we want you to be in control of your information:
+          </h2>
+          <ul>
+            <li>
+              <h2>
+                • Device permissions. Mobile platforms might well have
+                permission systems for particular types of device data and
+                notifications, such as location services and push notifications.
+                You can modify the settings on your device to agree or disagree
+                with the gathering, processing, or display of the relevant data
+                or notifications. Of course, if you do that, some services might
+                stop working properly
+              </h2>
+            </li>
+            <li>
+              <h2>
+                • Uninstall. By removing an app from your smartphone via the
+                regular uninstall procedure, you can prevent it from collecting
+                any more data.
+              </h2>
+            </li>
+            <li>
+              <h2>
+                Updating your additional information for adoption process.
+                Updating your adoption process information with new information.
+                You can make changes by filling out the form on your profile
+                again if you think the information we have about you is
+                incorrect or we are no longer permitted to use it
+              </h2>
+            </li>
+          </ul>
+          <h2 className="bold"> 5. Changes to Privacy Policies</h2>
+          <h2>
+            This policy might change in the future. Before any significant
+            changes go into effect, we'll let you know so you have time to
+            review them.
+          </h2>
+          <h2 className="bold">6. How to Contact Us</h2>
+          <h2>Please feel free to reach out to us at Reskyutph@gmail.com.</h2>
         </section>
       </div>
     </div>
