@@ -12,12 +12,14 @@ export default function ContactUs() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    console.log(process.env);
+
     emailjs
       .sendForm(
-        'service_3d1soey',
-        'template_w9ia62s',
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        '_p02JMH-OM30WSzUh'
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
