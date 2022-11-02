@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../src/utils/theme';
 import LandingPage from './page/landing-page';
 import React from 'react';
+import './styles/normalize.css';
 
 function App() {
   return (

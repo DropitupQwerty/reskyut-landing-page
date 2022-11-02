@@ -3,8 +3,7 @@
   --secondary-color: #23272b;
   --primary-text-color: #fff;
   --pane-padding: 5px 42px;
-  --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --main-font: 'Source Sans Pro', sans-serif;
   --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -12,12 +11,22 @@
   background-color: var(--secondary-color);
   color: var(--primary-text-color);
   border: 0.2px solid var(--primary-text-color);
+  margin: 0 20px;
+  width: 200px;
 }
 
 .button-secondary {
   color: var(--secondary-color);
-  border: 0.2px solid var(--secondary-color);
-  width: 200px;
+  border: 1px solid var(--secondary-color);
+  width: 90%;
+  height: 40px;
+  text-align: center;
+}
+
+.button-text-center {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 100;
 }
 
 .button-primary,
@@ -26,10 +35,8 @@
   font-weight: bold;
   padding: 18px 20px;
   border-radius: 5px;
-  margin: 0 20px;
   margin-top: 20px;
   font-size: 1.7rem;
-  width: 200px;
   display: flex;
   align-items: center;
   transition: 0.3s;
@@ -39,6 +46,7 @@
   text-decoration: none;
   color: var(--primary-text-color);
   width: 160px;
+  height: 18px;
   border: 1px solid var(--primary-text-color);
 }
 
@@ -78,6 +86,7 @@
   position: absolute;
   top: 0;
   z-index: 1;
+  width: 100%;
 }
 
 .nav-links {
@@ -113,7 +122,7 @@
 .nav-header {
   font-weight: bolder;
   font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--main-font);
 }
 
 .nav-logo {
@@ -158,7 +167,7 @@
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .paws-bg {
@@ -302,9 +311,8 @@
   transform: scaleY(-1);
   background-image: url('../../assets/reskyut-banner-bg.png');
   background-repeat: no-repeat;
-  background-size: 100% 50vh;
-  margin-top: 200px;
-  height: 50vh;
+  background-size: 100% 100%;
+  margin-top: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -318,7 +326,6 @@
   transform: scaleY(-1);
   position: relative;
   justify-content: space-around;
-  margin-top: 200px;
 }
 
 .footer-paws-bg {
@@ -348,27 +355,24 @@
   margin: 0;
   font-size: 2rem;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 .footer-contacts-info {
-  padding: 10px;
   display: flex;
   flex-direction: column;
-}
-
-.footer-contacts-info,
-.qr {
-  margin-top: 30px;
+  padding: 100px 0;
 }
 
 .contact-container {
-  width: 100%;
   color: var(--primary-text-color);
 }
 
 .contact-header {
+  text-align: center;
   margin: 0;
-  font-size: 25px;
+  font-weight: 200;
+  font-size: 5rem;
 }
 
 .about {
@@ -376,10 +380,6 @@
   width: 80%;
   font-size: 17px;
   font-weight: 100;
-}
-
-.contact-lists {
-  list-style: none;
 }
 
 .about-container {
@@ -394,6 +394,9 @@
     flex-direction: column;
     justify-content: center;
   }
+  .contact-header {
+    font-size: 3rem;
+  }
   .qr {
     bottom: 10vh;
   }
@@ -407,6 +410,31 @@
   }
   .contact-container {
     width: 100%;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
+  }
+}
+
+.form-container {
+  width: 50vw;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  outline: none;
+  width: 90%;
+}
+
+.form-label {
+  font-size: 2rem;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 80vw;
   }
 }

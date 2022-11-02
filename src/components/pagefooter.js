@@ -1,6 +1,7 @@
 import React from 'react';
 import QrCode from '../assets/reskyut-app-qrDownloader.png';
 import pawsbg from '../assets/reskyut-paws-bg.png';
+import ContactUs from './contact-us';
 
 export default function PageFooter() {
   return (
@@ -13,24 +14,9 @@ export default function PageFooter() {
         </div>
         <div className="footer-contacts-info">
           <div className="contact-container">
-            <div>
-              <h2 className="contact-header">Contact Us</h2>
+            <div className="contact-lists">
+              <ContactUs />
             </div>
-
-            <ul className="contact-lists">
-              <li>
-                <input />
-              </li>
-              <li>
-                <input />
-              </li>
-              <li>
-                <input />
-              </li>
-              <li>
-                <input />
-              </li>
-            </ul>
           </div>
         </div>
       </div>
