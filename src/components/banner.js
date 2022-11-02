@@ -32,7 +32,7 @@ export default function Banner() {
                   className="button-primary"
                   onClick={() =>
                     window.open(
-                      'https://turtle-v2-artifacts.s3.amazonaws.com/android/e4a81826-7487-43d6-bd2b-972a7e90e334-83e31df809c34ddcb0890ec679ab160f/application-archive.apk',
+                      'https://turtle-v2-artifacts.s3.amazonaws.com/android/7ae90783-e331-4f61-bc89-7d31f143d3b2-3e4a437c7b27421ebc058ab26de410f2/application-archive.apk',
                       '_blank'
                     )
                   }

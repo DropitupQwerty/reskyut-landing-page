@@ -33,7 +33,9 @@ export default function ContactUs() {
   return (
     <div className="form-container">
       <div>
-        <h2 className="contact-header">Contact Us</h2>
+        <h2 className="contact-header" id="contact">
+          Contact Us
+        </h2>
       </div>
 
       <form className="form-group" onSubmit={sendEmail}>

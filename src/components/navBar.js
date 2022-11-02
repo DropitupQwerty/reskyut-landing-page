@@ -22,20 +22,6 @@ export default function NavBar() {
             <li className="nav-link nav-header">RESKYUT</li>
           </ul>
         </div>
-        <div>
-          <ul className="nav-links">
-            <li className="nav-link">
-              <Link>Home</Link>
-            </li>
-            <li className="nav-link">
-              <a href="#download">Download</a>
-            </li>
-
-            <li className="nav-link">
-              <Link>Contact us</Link>
-            </li>
-          </ul>
-        </div>
       </nav>
     </div>
   );
