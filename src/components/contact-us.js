@@ -9,6 +9,8 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function ContactUs() {
+  const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,7 +20,7 @@ export default function ContactUs() {
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
+        form.current,
         process.env.REACT_APP_USER_ID
       )
       .then(
@@ -40,7 +42,7 @@ export default function ContactUs() {
         </h2>
       </div>
 
-      <form className="form-group" onSubmit={sendEmail}>
+      <form ref={form} className="form-group" onSubmit={sendEmail}>
         <Typography variant="h5">NAME</Typography>
         <FormControl fullWidth>
           <OutlinedInput sx={style.formControl} name="name" required />
@@ -50,11 +52,11 @@ export default function ContactUs() {
         <FormControl fullWidth>
           <OutlinedInput sx={style.formControl} name="email" required />
         </FormControl>
-
+        {/* 
         <Typography variant="h5">SUBJECT</Typography>
         <FormControl fullWidth>
           <OutlinedInput sx={style.formControl} name="subject" required />
-        </FormControl>
+        </FormControl> */}
 
         <Typography variant="h5">MESSAGE</Typography>
         <FormControl fullWidth>

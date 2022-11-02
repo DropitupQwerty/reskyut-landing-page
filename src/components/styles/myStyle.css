@@ -326,17 +326,26 @@
   transform: scaleY(-1);
   position: relative;
   justify-content: space-around;
+  opacity: 100%;
 }
 
-.footer-paws-bg {
+.footer-content-container:before {
+  background-image: url('../../assets/reskyut-paws-bg.png');
+  content: ' ';
+  display: block;
   position: absolute;
   width: 100%;
+  height: 100%;
   opacity: 30%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
 }
 
 .qr {
   padding: 20px;
   transition: 0.4s;
+  z-index: 1;
 }
 
 .qr:hover {
@@ -373,19 +382,6 @@
   margin: 0;
   font-weight: 200;
   font-size: 5rem;
-}
-
-.about {
-  margin: 0;
-  width: 80%;
-  font-size: 17px;
-  font-weight: 100;
-}
-
-.about-container {
-  width: 100%;
-  color: var(--primary-text-color);
-  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 600px) {
