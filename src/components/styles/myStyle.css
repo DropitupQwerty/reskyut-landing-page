@@ -149,7 +149,7 @@ a {
 
 .description-container {
   width: 100%;
-  margin-top: 15%;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -174,11 +174,16 @@ a {
   background-size: 100% 100%;
 }
 
-.paws-bg {
+.banner:before {
+  background-image: url('../../assets/reskyut-paws-bg.png');
+  content: ' ';
+  display: block;
   position: absolute;
   width: 100%;
-  opacity: 20%;
-  bottom: 100px;
+  height: 100%;
+  opacity: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-desc {
@@ -186,7 +191,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  z-index: 1;
 }
 
 .hero-content {
@@ -198,11 +202,11 @@ a {
 @media only screen and (max-width: 600px) {
   .hero-content {
     width: 90%;
+    margin-bottom: 100px;
   }
 }
 
 .hero-content-button {
-  z-index: 1;
   height: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +222,6 @@ a {
     justify-content: center;
   }
   .hero-prev-img {
-    margin-top: 150px;
     height: 500px;
   }
 }

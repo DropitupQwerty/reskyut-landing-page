@@ -11,7 +11,6 @@ export default function Banner() {
   return (
     <div className="hero-container">
       <div className="banner">
-        <img className="paws-bg" src={pawsbg} alt="paws-bg" />
         <div className="hero-desc">
           <div className="hero-content">
             <div className="description-container">
