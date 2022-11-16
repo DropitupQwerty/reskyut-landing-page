@@ -16,6 +16,7 @@ export default function Banner() {
             <div className="description-container">
               <div className="description-header">
                 <h1>Adopt,</h1>
+
                 <h1>Don't Shop</h1>
               </div>
             </div>
@@ -25,7 +26,7 @@ export default function Banner() {
                   className="button-primary"
                   onClick={() =>
                     window.open(
-                      'https://turtle-v2-artifacts.s3.amazonaws.com/android/2f500b68-12a0-4a56-beed-89a6701945a1-d78c4dc1d17b4d7d94500c2051cefd4e/application-archive.apk',
+                      'https://github.com/LiwanagErickson/reskyut-release/releases/download/v1.0.2/reskyut_v1.0.2.apk',
                       '_blank'
                     )
                   }
@@ -45,6 +46,9 @@ export default function Banner() {
                 </a>
               </div>
             </section>
+            <div class="parent">
+              <div class="my-element-to-clip"></div>
+            </div>
           </div>
 
           <div className="hero-prev-container">
