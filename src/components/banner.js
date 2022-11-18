@@ -26,7 +26,7 @@ export default function Banner() {
                   className="button-primary"
                   onClick={() =>
                     window.open(
-                      'https://github.com/LiwanagErickson/reskyut-release/releases/download/v1.0.2/reskyut_v1.0.2.apk',
+                      'https://github.com/LiwanagErickson/reskyut-release/releases/download/v1.0.2-b2/reskyut_v1.0.2_b2.apk',
                       '_blank'
                     )
                   }
