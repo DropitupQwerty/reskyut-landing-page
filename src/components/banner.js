@@ -7,6 +7,8 @@ import pawsbg from '../assets/reskyut-paws-bg.png';
 
 export default function Banner() {
   const navigate = useNavigate();
+  const downloadUrl =
+    'https://github.com/LiwanagErickson/reskyut-release/releases/download/v1.0.4/reskyut_v1.0.4.apk';
 
   return (
     <div className="hero-container">
@@ -24,12 +26,7 @@ export default function Banner() {
               <div id="download">
                 <button
                   className="button-primary"
-                  onClick={() =>
-                    window.open(
-                      'https://github.com/LiwanagErickson/reskyut-release/releases/download/v1.0.2-b2/reskyut_v1.0.2_b2.apk',
-                      '_blank'
-                    )
-                  }
+                  onClick={() => window.open(downloadUrl, '_blank')}
                 >
                   <div className="icon-button">
                     <AndroidIcon />

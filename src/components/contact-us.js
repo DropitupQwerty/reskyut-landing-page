@@ -52,11 +52,6 @@ export default function ContactUs() {
         <FormControl fullWidth>
           <OutlinedInput sx={style.formControl} name="email" required />
         </FormControl>
-        {/* 
-        <Typography variant="h5">SUBJECT</Typography>
-        <FormControl fullWidth>
-          <OutlinedInput sx={style.formControl} name="subject" required />
-        </FormControl> */}
 
         <Typography variant="h5">MESSAGE</Typography>
         <FormControl fullWidth>
